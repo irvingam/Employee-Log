@@ -2,13 +2,16 @@
     padding: 0;
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 2.5rem;
+    margin-top: 1.5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
-
+/* top */
 
 .title {
     background-color: #6495ED;
@@ -16,7 +19,13 @@ body {
     min-height: 5vh;
     padding: 5px;
     font-size: 2rem;
-    
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.top {
+    padding: 1rem;
+    font-size: 1rem;
 }
 
 .add-contact {
@@ -27,17 +36,57 @@ body {
     padding-left: 5px;
 }
 
-.add-contact-button {
-    font-size: 1rem;
-    padding: 3px;
+#name-input,
+#email-input {
+    width: 15%;
 }
 
-#contacts {
-    width: 100%;
+#office-input {
+    width: 5%;
 }
 
+#add-contact-button {
+    padding: 2px;
+}
+
+/* Bottom */
 
 
+
+table {
+    text-align: center;
+    position: fixed;
+    box-sizing: border-box;
+}
+
+th {
+    padding: 3.5px;
+    text-align: center;
+    border-bottom: solid #6495ED;
+}
+
+td {
+    border-bottom: solid 1px;
+    border-bottom-color: grey;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#table-name,
+#table-email {
+    width: 37%;
+}
+
+#table-position,
+#table-office {
+    width: 10%;
+}
+
+.deleteBtn,
+.editBtn {
+    font-size: 1.2rem;
+    padding: 2px;
+}
 
 
 
