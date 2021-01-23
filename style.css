@@ -82,13 +82,21 @@ td {
     width: 10%;
 }
 
-.deleteBtn,
+.deleteBtn{
+    font-size: 1.2rem;
+    padding: 2px;
+    background: red;
+    color: white;
+    border: none;
+}
+
 .editBtn {
     font-size: 1.2rem;
     padding: 2px;
+    background: #3cd467;
+    color: white;
+    border: none;
 }
-
-
 
 
 
