@@ -9,6 +9,9 @@ const table = document.getElementById('contacts')
 
 //Events
 addBtn.addEventListener('click', addContact)
+document.addEventListener('keypress', function(event) {
+    if (event.keyCode === 13) {addContact()}})
+table.addEventListener('click', editDelete)
 
 //Functions
 function addContact(event) {
@@ -68,7 +71,16 @@ function addContact(event) {
     tablePosition.value = 'select'
 }
 
+function editDelete(e) {
+    const item = e.target
+    console.log(e.target)
 
+    // Delete button
+    if (item.classList[0] === 'deleteBtn') {
+        const newRow = item.parentElement.parentElement
+        newRow.remove()
+    }
+}
 
 
 
