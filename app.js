@@ -49,11 +49,11 @@ function addContact(event) {
     actionArea.classList.add('action-area')
     newContact.appendChild(actionArea)
 
-    // Edit info button
+    /* Edit info button
     const editButton = document.createElement('button')
     editButton.innerHTML = '<i class="fas fa-user-edit"></i>'
     editButton.classList.add('editBtn')
-    actionArea.appendChild(editButton)
+    actionArea.appendChild(editButton) */
 
     // Delete contact button
     const deleteButton = document.createElement('button')
