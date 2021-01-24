@@ -36,6 +36,19 @@ body {
     padding-left: 5px;
 }
 
+#add-contact-button {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+}
+
+#add-contact-button:hover {
+    background-color: #38c961;
+    color: white;
+    border: none;
+}
+
 #name-input,
 #email-input {
     width: 15%;
@@ -96,6 +109,11 @@ td {
     background: #3cd467;
     color: white;
     border: none;
+}
+
+.fa-user-times,
+.fa-user-edit {
+    pointer-events: none;
 }
 
 
